@@ -12,4 +12,4 @@ echo "---------------------------------------------"
 java -version
 echo "---------------------------------------------"
 
-ls -l /Library/Java/JavaVirtualMachines/jdk-10.0.2.jdk/Contents/Home/bin/java
+ls -l /Library/Java/JavaVirtualMachines/jdk-10.0.2.jdk/Contents/Home/bin
