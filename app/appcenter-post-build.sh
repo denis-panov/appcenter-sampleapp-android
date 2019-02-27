@@ -10,5 +10,3 @@ echo "---------------Java-Home---------------------"
 echo $JAVA_HOME
 echo "---------------------------------------------"
 java -version
-
-ls -l /Library/Java/JavaVirtualMachines/jdk-10.0.2.jdk/Contents/Home/bin/java

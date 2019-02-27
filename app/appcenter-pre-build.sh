@@ -11,6 +11,5 @@ echo $JAVA_HOME
 echo "---------------------------------------------"
 java -version
 echo "---------------------------------------------"
-export JAVA_HOME=$JAVA_HOME_11_X64
 
-java -version
+ls -l /Library/Java/JavaVirtualMachines/jdk-10.0.2.jdk/Contents/Home/bin/java
