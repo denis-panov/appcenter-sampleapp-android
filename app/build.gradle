@@ -1,10 +1,4 @@
 apply plugin: 'com.android.application'
-apply plugin: 'java'
-
-[compileJava, compileTestJava]*.options*.encoding = 'UTF-8'
-compileJava.options.fork = true
-compileJava.options.forkOptions.executable = "/Library/Java/JavaVirtualMachines/jdk-10.0.2.jdk/Contents/Home/bin/javac"
-
 
 android {
     compileSdkVersion 27
