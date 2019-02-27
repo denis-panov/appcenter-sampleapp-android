@@ -1,4 +1,9 @@
 // Top-level build file where you can add configuration options common to all sub-projects/modules.
+apply plugin: 'java'
+
+[compileJava, compileTestJava]*.options*.encoding = 'UTF-8'
+compileJava.options.fork = true
+compileJava.options.forkOptions.executable = "/Library/Java/JavaVirtualMachines/jdk-10.0.2.jdk/Contents/Home/bin/javac"
 
 buildscript {
     repositories {
@@ -7,8 +12,6 @@ buildscript {
     }
     dependencies {
         classpath 'com.android.tools.build:gradle:3.1.2'
-        compileJava.options.fork = true
-        compileJava.options.forkOptions.executable = "/Library/Java/JavaVirtualMachines/jdk-10.0.2.jdk/Contents/Home/bin/javac"
 
         // NOTE: Do not place your application dependencies here; they belong
         // in the individual module build.gradle files
@@ -20,8 +23,4 @@ allprojects {
         jcenter()
         google()
     }
-}
-
-task clean(type: Delete) {
-    delete rootProject.buildDir
 }
