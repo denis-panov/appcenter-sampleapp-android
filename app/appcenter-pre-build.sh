@@ -10,3 +10,7 @@ echo "---------------Java-Home---------------------"
 echo $JAVA_HOME
 echo "---------------------------------------------"
 java -version
+echo "---------------------------------------------"
+export JAVA_HOME=$JAVA_HOME_11_X64
+
+java -version
